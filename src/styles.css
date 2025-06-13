@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --sidebar-width: 100px; /* Cambia este valor y todo se ajustará */
+}
+
+#zoom-container {
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}

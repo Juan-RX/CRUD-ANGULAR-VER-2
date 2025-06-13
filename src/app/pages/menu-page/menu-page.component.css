@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  margin-left: var(--sidebar-width);
+  margin-top: 60px;
+  padding: 20px;
+}
+.main-content {
+  margin-left: var(--sidebar-width);
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Resta el alto del header si es fijo */
+  margin-left: var(--sidebar-width); /* Resta el ancho de la sidebar si la tienes */
+}
+
+.centered-image {
+  width: 250px;
+  height: auto;
+  transform: translateX(-180px);
+}
+
+p {
+  font-size: 20px;
+}

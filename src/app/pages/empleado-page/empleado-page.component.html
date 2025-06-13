@@ -1,0 +1,130 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<app-sidebar></app-sidebar>
+<app-header [title]="' Gestion | Empleados'"></app-header>
+
+<!-- Contenido principal -->
+  <div class="main-content">
+    <h1 class="page-title"><i class="fas fa-users"></i> Código Empleado</h1>
+    
+    <div class="crud-container">
+      <div class="crud-header">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Buscar empleado...">
+        </div>
+        <button class="btn-add">
+          <i class="fas fa-plus"></i> Nuevo Empleado
+        </button>
+      </div>
+      
+      <div class="table-container">
+        <table class="employee-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Fecha Nacimiento</th>
+              <th>Inicio Contrato</th>
+              <th>Puesto</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0198</td>
+              <td>Juan</td>
+              <td>Ortiz Moreno</td>
+              <td>25/04/2003</td>
+              <td>10/05/2025</td>
+              <td>Desarrollador</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+            <tr>
+              <td>0199</td>
+              <td>Edgar</td>
+              <td>Leal Duarte</td>
+              <td>10/04/2003</td>
+              <td>10/05/2025</td>
+              <td>QA</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+            <tr>
+              <td>0200</td>
+              <td>Javier</td>
+              <td>Alvarado Rios</td>
+              <td>10/04/2003</td>
+              <td>10/05/2025</td>
+              <td>Administración</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+            <tr>
+              <td>0201</td>
+              <td>José</td>
+              <td>Zanches Zurreal</td>
+              <td>12/09/2001</td>
+              <td>12/05/2025</td>
+              <td>Desarrollador</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+            <tr>
+              <td>0202</td>
+              <td>Andrés</td>
+              <td>Pietro Ojeda</td>
+              <td>31/03/2000</td>
+              <td>12/05/2025</td>
+              <td>Desarrollador</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+            <tr>
+              <td>0203</td>
+              <td>Gilberto</td>
+              <td>Lopez Martinez</td>
+              <td>19/07/2003</td>
+              <td>15/05/2025</td>
+              <td>Soporte Técnico</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+            <tr>
+              <td>0204</td>
+              <td>Sergio</td>
+              <td>Murillo Lopez</td>
+              <td>21/08/1997</td>
+              <td>30/05/2025</td>
+              <td>Administración</td>
+              <td class="actions-cell">
+                <div class="btn-action btn-edit"><i class="fas fa-edit"></i></div>
+                <div class="btn-action btn-delete"><i class="fas fa-trash"></i></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="pagination">
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+  

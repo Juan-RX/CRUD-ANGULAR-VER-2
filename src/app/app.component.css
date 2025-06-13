@@ -1,0 +1,24 @@
+/* styles.css o app.component.css */
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-rows: var(--header-height) 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+  height: 100vh;
+}
+
+app-header {
+  grid-area: header;
+}
+
+app-sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  overflow: auto;
+  padding: 16px;
+}
